@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Claude Code 终端配置模板</title>
+<style>
+* { box-sizing: border-box; margin: 0 }
+body { font-family: system-ui, 'Microsoft YaHei', sans-serif; background: #0f1012; color: #d8dde5; padding: 36px }
+h1 { font-weight: 600; font-size: 26px; margin-bottom: 8px; color: #e5eaf0 }
+.sub { color: #7b8a9a; margin-bottom: 32px; font-size: 14px; line-height: 1.6 }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); gap: 32px }
+.card { background: #16181b; border-radius: 12px; padding: 20px; border: 1px solid #272b30; transition: border 0.2s }
+.card:hover { border-color: #3d4450 }
+.card h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px; color: #e0e5eb }
+.card p { color: #869098; font-size: 13px; margin-bottom: 14px; line-height: 1.5 }
+.win { border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.4); font-size: 13px }
+.tabbar { padding: 8px 12px; display: flex; gap: 6px; border-bottom: 1px solid #0003 }
+.tab { padding: 6px 14px; border-radius: 6px 6px 0 0; font-weight: 500; font-size: 12px }
+pre { padding: 18px 22px; line-height: 1.65; overflow-x: auto; position: relative }
+.cur { display: inline-block; width: 2px; height: 16px; margin-left: 2px; animation: blink 1.2s steps(2, start) infinite }
+@keyframes blink { to { visibility: hidden } }
+.pal { padding: 8px 22px; display: flex; gap: 6px; border-top: 1px solid #0003 }
+.pal i { width: 20px; height: 20px; border-radius: 4px }
+
+@font-face { font-family: "Preview maple"; src: url("file:///C:/Users/SEMI/claude-terminal-setup/tools/.font-cache/MapleMono-NF-CN-Regular.ttf") }
+@font-face { font-family: "Preview sarasa"; src: url("file:///C:/Users/SEMI/claude-terminal-setup/tools/.font-cache/SarasaTermSC-Regular.ttf") }
+@font-face { font-family: "Preview wenkai"; src: url("file:///C:/Users/SEMI/claude-terminal-setup/tools/.font-cache/LXGWWenKaiMono-Regular.ttf") }
+@font-face { font-family: "Preview jbmaple"; src: url("file:///C:/Users/SEMI/claude-terminal-setup/tools/.font-cache/JetBrainsMapleMono-Regular.ttf") }</style></head>
+<body>
+<h1>Claude Code 终端配置模板</h1>
+<p class="sub">字体 × 配色精选搭配，一步到位。双击 setup.bat 按序号选择，或加参数 -Preset &lt;id&gt; 跳过菜单。<br>想自己搭配字体和配色？选菜单最后一项「🎨 DIY 自定义」，或加参数 -Font &lt;id&gt; -Theme &lt;id&gt;。</p>
+<div class="grid">
+<div class="card">
+  <h2>森影 · 圆润温柔</h2>
+  <p>灰绿森林 + 圆润字形，长时间阅读的温柔守护</p>
+  <div class="win"><div class="tabbar" style="background:rgb(36,42,47)">
+    <div class="tab" style="background:#2D353B;color:#D3C6AA;border-top:2px solid #A7C080">✳ Claude Code</div></div>
+  <pre style="background:#2D353B;color:#D3C6AA;font-family:'Preview maple',monospace;font-size:13px"><span style="color:#A7C080;font-weight:bold">✳ </span><span style="color:#D3C6AA;font-weight:bold">Claude Code</span><span style="color:#859289;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#859289;">> </span><span style="color:#D3C6AA;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#A7C080;">● </span><span style="color:#D3C6AA;">Read</span><span style="color:#859289;">(src/api/login.ts)</span>
+<span style="color:#859289;">  ⎿ 读取 48 行</span>
+<span style="color:#A7C080;">● </span><span style="color:#D3C6AA;">Update</span><span style="color:#859289;">(src/api/login.ts)</span>
+<span style="color:#859289;">  ⎿ </span><span style="color:#A7C080;">+3 </span><span style="color:#E67E80;">-1</span>
+<span style="background:#A7C08022;display:inline-block;width:100%"><span style="color:#A7C080;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#A7C08022;display:inline-block;width:100%"><span style="color:#A7C080;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#E67E8022;display:inline-block;width:100%"><span style="color:#E67E80;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#A7C080;">● </span><span style="color:#D3C6AA;">Bash</span><span style="color:#859289;">(npm test)</span>
+<span style="color:#859289;">  ⎿ </span><span style="color:#A7C080;">✓ 12 passed</span><span style="color:#DBBC7F;">  ⚠ 1 warning</span>
+
+<span style="color:#D3C6AA;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#D699B6;">⏵⏵ bypass permissions on</span><span style="color:#859289;"> (shift+tab to cycle)</span><span class="cur" style="background:#A7C080"></span></pre>
+  <div class="pal" style="background:#2D353B"><i style="background:#475258"></i><i style="background:#E67E80"></i><i style="background:#A7C080"></i><i style="background:#DBBC7F"></i><i style="background:#7FBBB3"></i><i style="background:#D699B6"></i><i style="background:#83C092"></i><i style="background:#D3C6AA"></i></div></div>
+</div>
+<div class="card">
+  <h2>工坊 · 专业规整</h2>
+  <p>暖木质感 + 方正字形，传统工艺的稳重气息</p>
+  <div class="win"><div class="tabbar" style="background:rgb(32,32,32)">
+    <div class="tab" style="background:#282828;color:#D4BE98;border-top:2px solid #D8A657">✳ Claude Code</div></div>
+  <pre style="background:#282828;color:#D4BE98;font-family:'Preview sarasa',monospace;font-size:13px"><span style="color:#D8A657;font-weight:bold">✳ </span><span style="color:#D4BE98;font-weight:bold">Claude Code</span><span style="color:#7C6F64;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#7C6F64;">> </span><span style="color:#D4BE98;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#A9B665;">● </span><span style="color:#D4BE98;">Read</span><span style="color:#7C6F64;">(src/api/login.ts)</span>
+<span style="color:#7C6F64;">  ⎿ 读取 48 行</span>
+<span style="color:#A9B665;">● </span><span style="color:#D4BE98;">Update</span><span style="color:#7C6F64;">(src/api/login.ts)</span>
+<span style="color:#7C6F64;">  ⎿ </span><span style="color:#A9B665;">+3 </span><span style="color:#EA6962;">-1</span>
+<span style="background:#A9B66522;display:inline-block;width:100%"><span style="color:#A9B665;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#A9B66522;display:inline-block;width:100%"><span style="color:#A9B665;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#EA696222;display:inline-block;width:100%"><span style="color:#EA6962;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#A9B665;">● </span><span style="color:#D4BE98;">Bash</span><span style="color:#7C6F64;">(npm test)</span>
+<span style="color:#7C6F64;">  ⎿ </span><span style="color:#A9B665;">✓ 12 passed</span><span style="color:#D8A657;">  ⚠ 1 warning</span>
+
+<span style="color:#D4BE98;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#D3869B;">⏵⏵ bypass permissions on</span><span style="color:#7C6F64;"> (shift+tab to cycle)</span><span class="cur" style="background:#D8A657"></span></pre>
+  <div class="pal" style="background:#282828"><i style="background:#3C3836"></i><i style="background:#EA6962"></i><i style="background:#A9B665"></i><i style="background:#D8A657"></i><i style="background:#7DAEA3"></i><i style="background:#D3869B"></i><i style="background:#89B482"></i><i style="background:#D4BE98"></i></div></div>
+</div>
+<div class="card">
+  <h2>极地 · 清爽利落</h2>
+  <p>冷灰冰蓝 + 硬朗字形，北欧设计的克制美学</p>
+  <div class="win"><div class="tabbar" style="background:rgb(37,42,51)">
+    <div class="tab" style="background:#2E3440;color:#D8DEE9;border-top:2px solid #88C0D0">✳ Claude Code</div></div>
+  <pre style="background:#2E3440;color:#D8DEE9;font-family:'Preview jbmaple',monospace;font-size:13px"><span style="color:#88C0D0;font-weight:bold">✳ </span><span style="color:#D8DEE9;font-weight:bold">Claude Code</span><span style="color:#616E88;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#616E88;">> </span><span style="color:#D8DEE9;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#A3BE8C;">● </span><span style="color:#D8DEE9;">Read</span><span style="color:#616E88;">(src/api/login.ts)</span>
+<span style="color:#616E88;">  ⎿ 读取 48 行</span>
+<span style="color:#A3BE8C;">● </span><span style="color:#D8DEE9;">Update</span><span style="color:#616E88;">(src/api/login.ts)</span>
+<span style="color:#616E88;">  ⎿ </span><span style="color:#A3BE8C;">+3 </span><span style="color:#BF616A;">-1</span>
+<span style="background:#A3BE8C22;display:inline-block;width:100%"><span style="color:#A3BE8C;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#A3BE8C22;display:inline-block;width:100%"><span style="color:#A3BE8C;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#BF616A22;display:inline-block;width:100%"><span style="color:#BF616A;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#A3BE8C;">● </span><span style="color:#D8DEE9;">Bash</span><span style="color:#616E88;">(npm test)</span>
+<span style="color:#616E88;">  ⎿ </span><span style="color:#A3BE8C;">✓ 12 passed</span><span style="color:#EBCB8B;">  ⚠ 1 warning</span>
+
+<span style="color:#D8DEE9;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#B48EAD;">⏵⏵ bypass permissions on</span><span style="color:#616E88;"> (shift+tab to cycle)</span><span class="cur" style="background:#88C0D0"></span></pre>
+  <div class="pal" style="background:#2E3440"><i style="background:#3B4252"></i><i style="background:#BF616A"></i><i style="background:#A3BE8C"></i><i style="background:#EBCB8B"></i><i style="background:#81A1C1"></i><i style="background:#B48EAD"></i><i style="background:#88C0D0"></i><i style="background:#E5E9F0"></i></div></div>
+</div>
+<div class="card">
+  <h2>月夜 · 优雅诗意</h2>
+  <p>紫灰月色 + 文楷笔触，诗人案头的雅致夜读</p>
+  <div class="win"><div class="tabbar" style="background:rgb(28,26,43)">
+    <div class="tab" style="background:#232136;color:#E0DEF4;border-top:2px solid #EA9A97">✳ Claude Code</div></div>
+  <pre style="background:#232136;color:#E0DEF4;font-family:'Preview wenkai',monospace;font-size:14px"><span style="color:#EA9A97;font-weight:bold">✳ </span><span style="color:#E0DEF4;font-weight:bold">Claude Code</span><span style="color:#6E6A86;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#6E6A86;">> </span><span style="color:#E0DEF4;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#3E8FB0;">● </span><span style="color:#E0DEF4;">Read</span><span style="color:#6E6A86;">(src/api/login.ts)</span>
+<span style="color:#6E6A86;">  ⎿ 读取 48 行</span>
+<span style="color:#3E8FB0;">● </span><span style="color:#E0DEF4;">Update</span><span style="color:#6E6A86;">(src/api/login.ts)</span>
+<span style="color:#6E6A86;">  ⎿ </span><span style="color:#3E8FB0;">+3 </span><span style="color:#EB6F92;">-1</span>
+<span style="background:#3E8FB022;display:inline-block;width:100%"><span style="color:#3E8FB0;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#3E8FB022;display:inline-block;width:100%"><span style="color:#3E8FB0;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#EB6F9222;display:inline-block;width:100%"><span style="color:#EB6F92;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#3E8FB0;">● </span><span style="color:#E0DEF4;">Bash</span><span style="color:#6E6A86;">(npm test)</span>
+<span style="color:#6E6A86;">  ⎿ </span><span style="color:#3E8FB0;">✓ 12 passed</span><span style="color:#F6C177;">  ⚠ 1 warning</span>
+
+<span style="color:#E0DEF4;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#C4A7E7;">⏵⏵ bypass permissions on</span><span style="color:#6E6A86;"> (shift+tab to cycle)</span><span class="cur" style="background:#EA9A97"></span></pre>
+  <div class="pal" style="background:#232136"><i style="background:#393552"></i><i style="background:#EB6F92"></i><i style="background:#3E8FB0"></i><i style="background:#F6C177"></i><i style="background:#9CCFD8"></i><i style="background:#C4A7E7"></i><i style="background:#EA9A97"></i><i style="background:#E0DEF4"></i></div></div>
+</div>
+<div class="card">
+  <h2>浪潮 · 沉浸专注</h2>
+  <p>墨蓝浮世 + 圆润字形，深海般的专注沉浸</p>
+  <div class="win"><div class="tabbar" style="background:rgb(25,25,32)">
+    <div class="tab" style="background:#1F1F28;color:#DCD7BA;border-top:2px solid #C8C093">✳ Claude Code</div></div>
+  <pre style="background:#1F1F28;color:#DCD7BA;font-family:'Preview maple',monospace;font-size:13px"><span style="color:#C8C093;font-weight:bold">✳ </span><span style="color:#DCD7BA;font-weight:bold">Claude Code</span><span style="color:#727169;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#727169;">> </span><span style="color:#DCD7BA;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#76946A;">● </span><span style="color:#DCD7BA;">Read</span><span style="color:#727169;">(src/api/login.ts)</span>
+<span style="color:#727169;">  ⎿ 读取 48 行</span>
+<span style="color:#76946A;">● </span><span style="color:#DCD7BA;">Update</span><span style="color:#727169;">(src/api/login.ts)</span>
+<span style="color:#727169;">  ⎿ </span><span style="color:#76946A;">+3 </span><span style="color:#C34043;">-1</span>
+<span style="background:#76946A22;display:inline-block;width:100%"><span style="color:#76946A;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#76946A22;display:inline-block;width:100%"><span style="color:#76946A;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#C3404322;display:inline-block;width:100%"><span style="color:#C34043;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#76946A;">● </span><span style="color:#DCD7BA;">Bash</span><span style="color:#727169;">(npm test)</span>
+<span style="color:#727169;">  ⎿ </span><span style="color:#76946A;">✓ 12 passed</span><span style="color:#C0A36E;">  ⚠ 1 warning</span>
+
+<span style="color:#DCD7BA;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#957FB8;">⏵⏵ bypass permissions on</span><span style="color:#727169;"> (shift+tab to cycle)</span><span class="cur" style="background:#C8C093"></span></pre>
+  <div class="pal" style="background:#1F1F28"><i style="background:#16161D"></i><i style="background:#C34043"></i><i style="background:#76946A"></i><i style="background:#C0A36E"></i><i style="background:#7E9CD8"></i><i style="background:#957FB8"></i><i style="background:#6A9589"></i><i style="background:#C8C093"></i></div></div>
+</div>
+<div class="card">
+  <h2>纸张 · 明亮文雅</h2>
+  <p>暖米纸底 + 文楷笔触，晨光书桌的清新温润</p>
+  <div class="win"><div class="tabbar" style="background:rgb(233,226,209)">
+    <div class="tab" style="background:#FDF6E3;color:#5C6A72;border-top:2px solid #8DA101">✳ Claude Code</div></div>
+  <pre style="background:#FDF6E3;color:#5C6A72;font-family:'Preview wenkai',monospace;font-size:14px"><span style="color:#8DA101;font-weight:bold">✳ </span><span style="color:#5C6A72;font-weight:bold">Claude Code</span><span style="color:#829181;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#829181;">> </span><span style="color:#5C6A72;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#8DA101;">● </span><span style="color:#5C6A72;">Read</span><span style="color:#829181;">(src/api/login.ts)</span>
+<span style="color:#829181;">  ⎿ 读取 48 行</span>
+<span style="color:#8DA101;">● </span><span style="color:#5C6A72;">Update</span><span style="color:#829181;">(src/api/login.ts)</span>
+<span style="color:#829181;">  ⎿ </span><span style="color:#8DA101;">+3 </span><span style="color:#F85552;">-1</span>
+<span style="background:#8DA10122;display:inline-block;width:100%"><span style="color:#8DA101;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#8DA10122;display:inline-block;width:100%"><span style="color:#8DA101;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#F8555222;display:inline-block;width:100%"><span style="color:#F85552;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#8DA101;">● </span><span style="color:#5C6A72;">Bash</span><span style="color:#829181;">(npm test)</span>
+<span style="color:#829181;">  ⎿ </span><span style="color:#8DA101;">✓ 12 passed</span><span style="color:#DFA000;">  ⚠ 1 warning</span>
+
+<span style="color:#5C6A72;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#DF69BA;">⏵⏵ bypass permissions on</span><span style="color:#829181;"> (shift+tab to cycle)</span><span class="cur" style="background:#8DA101"></span></pre>
+  <div class="pal" style="background:#FDF6E3"><i style="background:#5C6A72"></i><i style="background:#F85552"></i><i style="background:#8DA101"></i><i style="background:#DFA000"></i><i style="background:#3A94C5"></i><i style="background:#DF69BA"></i><i style="background:#35A77C"></i><i style="background:#DFDDC8"></i></div></div>
+</div>
+<div class="card">
+  <h2>禅意 · 简净护眼</h2>
+  <p>豆沙绿 + 方正字形，传统护眼的质朴安心</p>
+  <div class="win"><div class="tabbar" style="background:rgb(183,218,188)">
+    <div class="tab" style="background:#C7EDCC;color:#2F3E34;border-top:2px solid #2E7D4F">✳ Claude Code</div></div>
+  <pre style="background:#C7EDCC;color:#2F3E34;font-family:'Preview sarasa',monospace;font-size:13px"><span style="color:#2E7D4F;font-weight:bold">✳ </span><span style="color:#2F3E34;font-weight:bold">Claude Code</span><span style="color:#5E7064;">  v2.1 · ~/projects/demo</span>
+
+<span style="color:#5E7064;">> </span><span style="color:#2F3E34;">帮我给 login 接口加上参数校验</span>
+
+<span style="color:#2E7D4F;">● </span><span style="color:#2F3E34;">Read</span><span style="color:#5E7064;">(src/api/login.ts)</span>
+<span style="color:#5E7064;">  ⎿ 读取 48 行</span>
+<span style="color:#2E7D4F;">● </span><span style="color:#2F3E34;">Update</span><span style="color:#5E7064;">(src/api/login.ts)</span>
+<span style="color:#5E7064;">  ⎿ </span><span style="color:#2E7D4F;">+3 </span><span style="color:#B23A3A;">-1</span>
+<span style="background:#2E7D4F22;display:inline-block;width:100%"><span style="color:#2E7D4F;">  12 + if (!isEmail(body.email)) {</span></span>
+<span style="background:#2E7D4F22;display:inline-block;width:100%"><span style="color:#2E7D4F;">  13 +   return res.status(400).json({ error: "邮箱格式错误" })</span></span>
+<span style="background:#B23A3A22;display:inline-block;width:100%"><span style="color:#B23A3A;">  12 - const user = await db.find(body.email)</span></span>
+<span style="color:#2E7D4F;">● </span><span style="color:#2F3E34;">Bash</span><span style="color:#5E7064;">(npm test)</span>
+<span style="color:#5E7064;">  ⎿ </span><span style="color:#2E7D4F;">✓ 12 passed</span><span style="color:#8A6A00;">  ⚠ 1 warning</span>
+
+<span style="color:#2F3E34;">已为 login 接口添加邮箱格式校验，测试全部通过。</span>
+
+<span style="color:#7A3E8A;">⏵⏵ bypass permissions on</span><span style="color:#5E7064;"> (shift+tab to cycle)</span><span class="cur" style="background:#2E7D4F"></span></pre>
+  <div class="pal" style="background:#C7EDCC"><i style="background:#2F3E34"></i><i style="background:#B23A3A"></i><i style="background:#2E7D4F"></i><i style="background:#8A6A00"></i><i style="background:#2B5F8A"></i><i style="background:#7A3E8A"></i><i style="background:#1F7A72"></i><i style="background:#E4F5E6"></i></div></div>
+</div>
+</div>
+</body></html>

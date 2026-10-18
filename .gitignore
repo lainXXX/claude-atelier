@@ -1,0 +1,22 @@
+# PowerShell cache
+Microsoft/
+
+# Font cache (87MB, only needed for regenerating previews)
+tools/.font-cache/
+
+# Downloaded font packages (users download these automatically)
+*.zip
+*.7z
+
+# Backup files
+*.bak
+*.tmp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (if added in future)
+node_modules/

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "forest",
+    "title": "森影 · 圆润温柔",
+    "desc": "灰绿森林 + 圆润字形，长时间阅读的温柔守护",
+    "font": "maple",
+    "theme": "everforest"
+  },
+  {
+    "id": "craft",
+    "title": "工坊 · 专业规整",
+    "desc": "暖木质感 + 方正字形，传统工艺的稳重气息",
+    "font": "sarasa",
+    "theme": "gruvbox"
+  },
+  {
+    "id": "polar",
+    "title": "极地 · 清爽利落",
+    "desc": "冷灰冰蓝 + 硬朗字形，北欧设计的克制美学",
+    "font": "jbmaple",
+    "theme": "nord"
+  },
+  {
+    "id": "moon",
+    "title": "月夜 · 优雅诗意",
+    "desc": "紫灰月色 + 文楷笔触，诗人案头的雅致夜读",
+    "font": "wenkai",
+    "theme": "rosepine"
+  },
+  {
+    "id": "wave",
+    "title": "浪潮 · 沉浸专注",
+    "desc": "墨蓝浮世 + 圆润字形，深海般的专注沉浸",
+    "font": "maple",
+    "theme": "kanagawa"
+  },
+  {
+    "id": "paper",
+    "title": "纸张 · 明亮文雅",
+    "desc": "暖米纸底 + 文楷笔触，晨光书桌的清新温润",
+    "font": "wenkai",
+    "theme": "paper"
+  },
+  {
+    "id": "zen",
+    "title": "禅意 · 简净护眼",
+    "desc": "豆沙绿 + 方正字形，传统护眼的质朴安心",
+    "font": "sarasa",
+    "theme": "dousha"
+  }
+]

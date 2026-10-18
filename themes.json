@@ -1,0 +1,44 @@
+[
+  {
+    "id": "everforest", "title": "森林绿 Everforest Dark", "desc": "灰绿底 + 米色字，柔和低饱和，默认推荐", "claudeTheme": "dark",
+    "scheme": { "name": "Everforest Dark", "background": "#2D353B", "foreground": "#D3C6AA", "cursorColor": "#A7C080", "selectionBackground": "#475258",
+      "black": "#475258", "red": "#E67E80", "green": "#A7C080", "yellow": "#DBBC7F", "blue": "#7FBBB3", "purple": "#D699B6", "cyan": "#83C092", "white": "#D3C6AA",
+      "brightBlack": "#859289", "brightRed": "#E67E80", "brightGreen": "#A7C080", "brightYellow": "#DBBC7F", "brightBlue": "#7FBBB3", "brightPurple": "#D699B6", "brightCyan": "#83C092", "brightWhite": "#E4E1CD" }
+  },
+  {
+    "id": "gruvbox", "title": "暖木 Gruvbox Material", "desc": "暖棕底，复古温暖，夜间不刺眼", "claudeTheme": "dark",
+    "scheme": { "name": "Gruvbox Material Dark", "background": "#282828", "foreground": "#D4BE98", "cursorColor": "#D8A657", "selectionBackground": "#45403D",
+      "black": "#3C3836", "red": "#EA6962", "green": "#A9B665", "yellow": "#D8A657", "blue": "#7DAEA3", "purple": "#D3869B", "cyan": "#89B482", "white": "#D4BE98",
+      "brightBlack": "#7C6F64", "brightRed": "#EA6962", "brightGreen": "#A9B665", "brightYellow": "#D8A657", "brightBlue": "#7DAEA3", "brightPurple": "#D3869B", "brightCyan": "#89B482", "brightWhite": "#DDC7A1" }
+  },
+  {
+    "id": "nord", "title": "北极 Nord", "desc": "冷灰蓝，清爽克制，适合白天", "claudeTheme": "dark",
+    "scheme": { "name": "Nord", "background": "#2E3440", "foreground": "#D8DEE9", "cursorColor": "#88C0D0", "selectionBackground": "#434C5E",
+      "black": "#3B4252", "red": "#BF616A", "green": "#A3BE8C", "yellow": "#EBCB8B", "blue": "#81A1C1", "purple": "#B48EAD", "cyan": "#88C0D0", "white": "#E5E9F0",
+      "brightBlack": "#616E88", "brightRed": "#BF616A", "brightGreen": "#A3BE8C", "brightYellow": "#EBCB8B", "brightBlue": "#81A1C1", "brightPurple": "#B48EAD", "brightCyan": "#8FBCBB", "brightWhite": "#ECEFF4" }
+  },
+  {
+    "id": "rosepine", "title": "玫瑰松 Rosé Pine Moon", "desc": "紫灰底 + 玫瑰金点缀，优雅", "claudeTheme": "dark",
+    "scheme": { "name": "Rose Pine Moon", "background": "#232136", "foreground": "#E0DEF4", "cursorColor": "#EA9A97", "selectionBackground": "#44415A",
+      "black": "#393552", "red": "#EB6F92", "green": "#3E8FB0", "yellow": "#F6C177", "blue": "#9CCFD8", "purple": "#C4A7E7", "cyan": "#EA9A97", "white": "#E0DEF4",
+      "brightBlack": "#6E6A86", "brightRed": "#EB6F92", "brightGreen": "#3E8FB0", "brightYellow": "#F6C177", "brightBlue": "#9CCFD8", "brightPurple": "#C4A7E7", "brightCyan": "#EA9A97", "brightWhite": "#E0DEF4" }
+  },
+  {
+    "id": "kanagawa", "title": "浮世绘 Kanagawa", "desc": "墨蓝底，取色自《神奈川冲浪里》", "claudeTheme": "dark",
+    "scheme": { "name": "Kanagawa Wave", "background": "#1F1F28", "foreground": "#DCD7BA", "cursorColor": "#C8C093", "selectionBackground": "#2D4F67",
+      "black": "#16161D", "red": "#C34043", "green": "#76946A", "yellow": "#C0A36E", "blue": "#7E9CD8", "purple": "#957FB8", "cyan": "#6A9589", "white": "#C8C093",
+      "brightBlack": "#727169", "brightRed": "#E82424", "brightGreen": "#98BB6C", "brightYellow": "#E6C384", "brightBlue": "#7FB4CA", "brightPurple": "#938AA9", "brightCyan": "#7AA89F", "brightWhite": "#DCD7BA" }
+  },
+  {
+    "id": "paper", "title": "纸张 Everforest Light", "desc": "暖米色纸底，浅色护眼，明亮环境用", "claudeTheme": "light",
+    "scheme": { "name": "Everforest Light", "background": "#FDF6E3", "foreground": "#5C6A72", "cursorColor": "#8DA101", "selectionBackground": "#E6E2CC",
+      "black": "#5C6A72", "red": "#F85552", "green": "#8DA101", "yellow": "#DFA000", "blue": "#3A94C5", "purple": "#DF69BA", "cyan": "#35A77C", "white": "#DFDDC8",
+      "brightBlack": "#829181", "brightRed": "#F85552", "brightGreen": "#8DA101", "brightYellow": "#DFA000", "brightBlue": "#3A94C5", "brightPurple": "#DF69BA", "brightCyan": "#35A77C", "brightWhite": "#F4F0D9" }
+  },
+  {
+    "id": "dousha", "title": "豆沙绿 经典护眼", "desc": "国内经典护眼色 #C7EDCC，浅色", "claudeTheme": "light",
+    "scheme": { "name": "Dousha Green", "background": "#C7EDCC", "foreground": "#2F3E34", "cursorColor": "#2E7D4F", "selectionBackground": "#A8D8B0",
+      "black": "#2F3E34", "red": "#B23A3A", "green": "#2E7D4F", "yellow": "#8A6A00", "blue": "#2B5F8A", "purple": "#7A3E8A", "cyan": "#1F7A72", "white": "#E4F5E6",
+      "brightBlack": "#5E7064", "brightRed": "#C94A4A", "brightGreen": "#3A9460", "brightYellow": "#A07C00", "brightBlue": "#3672A3", "brightPurple": "#8E4FA0", "brightCyan": "#278F85", "brightWhite": "#F2FBF3" }
+  }
+]

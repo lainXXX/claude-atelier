@@ -1,0 +1,80 @@
+[
+  {
+    "id": "maple",
+    "title": "Maple Mono NF CN",
+    "desc": "圆润柔和，中英 2:1 对齐，带 Nerd Font 图标，默认推荐",
+    "face": "Maple Mono NF CN",
+    "size": 13,
+    "files": [
+      "MapleMono-NF-CN-Regular.ttf",
+      "MapleMono-NF-CN-Bold.ttf",
+      "MapleMono-NF-CN-Italic.ttf",
+      "MapleMono-NF-CN-BoldItalic.ttf"
+    ],
+    "downloads": [
+      {
+        "url": "https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-CN.zip",
+        "sha256": "af913b6322905348b3f50e4397fedc35b3a880db5effcce7969003051dcd3e94"
+      }
+    ]
+  },
+  {
+    "id": "sarasa",
+    "title": "更纱黑体 Sarasa Term SC",
+    "desc": "方正规整，传统专业，字形清晰",
+    "face": "Sarasa Term SC",
+    "size": 13,
+    "files": [
+      "SarasaTermSC-Regular.ttf",
+      "SarasaTermSC-Bold.ttf",
+      "SarasaTermSC-Italic.ttf",
+      "SarasaTermSC-BoldItalic.ttf"
+    ],
+    "downloads": [
+      {
+        "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.42/SarasaTermSC-TTF-1.0.42.7z",
+        "sha256": "129e4c19c698cd5d120b0cde3fe42d0d41c35c2ba9b6adb99f1d31f87ef85cd3"
+      }
+    ]
+  },
+  {
+    "id": "wenkai",
+    "title": "霞鹜文楷等宽 LXGW WenKai Mono",
+    "desc": "手写楷书味，文艺温润，配浅色纸张主题最佳",
+    "face": "LXGW WenKai Mono",
+    "size": 14,
+    "downloads": [
+      {
+        "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKaiMono-Regular.ttf",
+        "sha256": "bc068e4e395c396f2909ffdfac3a3751578b73ed3d64a79c9c31bfa84e43debe"
+      },
+      {
+        "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKaiMono-Medium.ttf",
+        "sha256": "7a674f448b15a1b3df781c3498973d77f71d270788f7f921080c1344e9d739e1"
+      }
+    ],
+    "files": [
+      "LXGWWenKaiMono-Regular.ttf",
+      "LXGWWenKaiMono-Medium.ttf"
+    ]
+  },
+  {
+    "id": "jbmaple",
+    "title": "JetBrains Maple Mono",
+    "desc": "英文 JetBrains Mono 硬朗利落 + 中文 Maple 圆润",
+    "face": "JetBrains Maple Mono",
+    "size": 13,
+    "files": [
+      "JetBrainsMapleMono-Regular.ttf",
+      "JetBrainsMapleMono-Bold.ttf",
+      "JetBrainsMapleMono-Italic.ttf",
+      "JetBrainsMapleMono-BoldItalic.ttf"
+    ],
+    "downloads": [
+      {
+        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/1.2304.79/JetBrainsMapleMono-NF-XX-XX-XX.zip",
+        "sha256": "3a7ed5e50f6831dc1414a4ad96b1e03c13cbc67ca32bc1bb7e9d90c56b903358"
+      }
+    ]
+  }
+]
